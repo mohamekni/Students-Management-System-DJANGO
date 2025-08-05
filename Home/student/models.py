@@ -20,7 +20,7 @@ class Parent(models.Model):
 class Student(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    Student_id = models.CharField(max_length=100)
+    student_id = models.CharField(max_length=100)
     gender = models.CharField(max_length=10, choices=(('Male', 'Male') , ('Female', 'Female'), ('Others','Others')))
     date_of_birth = models.DateField()
     student_class = models.CharField(max_length=100)
